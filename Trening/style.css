@@ -1,0 +1,20 @@
+body
+{
+    background-color: hsl(200,100%,50%);
+    color: hsl(100,60%,70%);
+    text-align: center;
+    font-family: verdana;
+    font-size: 30px;
+}
+#title:hover
+{
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}
+#main
+{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
