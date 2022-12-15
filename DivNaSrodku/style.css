@@ -10,26 +10,23 @@ body{
 
 .main{
     /* do nauczenia */
-    display: grid;
-    grid: auto / auto auto auto;
-    gap: 50px 50px;
-    
-    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-items: center;
     margin-left: auto;
     margin-right: auto;
-    justify-items: center;
+    background-color: darkgray;
     width: 100%;
-    
-
 }
 
 .container{
     background-color: gray;
     text-align: center;
     border: 1px solid black;
-    width: 400px;
+    width: auto;
     height: auto;
     padding: 10px;
+    margin: 10px;
     cursor: wait;
 }
 
