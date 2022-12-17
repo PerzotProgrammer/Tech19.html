@@ -61,16 +61,19 @@ body{
 .container:hover{
     background-color: rgba(0,0,0,0.75);
     box-shadow: 10px 10px 10px black;
-    animation: containerHover 1s;   
+    animation: containerHover 1s;
+    border-radius: 0px;
 }
 
 @keyframes containerHover{
     0%{
         background-color: rgba(0,0,0,0.25);
         box-shadow: 0px 0px 0px black;
+        border-radius: 25px;
     }
    100%{
         background-color: rgba(0,0,0,0.75);
         box-shadow: 10px 10px 10px black;
+        border-radius: 0px;
     }
 }
