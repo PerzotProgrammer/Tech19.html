@@ -33,29 +33,17 @@ body{
 
 .wraper{
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
 }
 
 .container{
     background-color: rgba(0,0,0,0.25);
     border: 1px dashed white;
     border-radius: 25px;
-    width: 30%;
-    height: auto;
     text-align: center;
-    margin-top: 40px;
+    margin: 50px;
     padding: 10px;
-}
-
-.container>.img{
-    width: 300px;
-}
-
-.container>.video{
-    width: auto;
-    height: 300px;
 }
 
 .container:hover{
