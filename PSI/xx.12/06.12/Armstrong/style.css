@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+    color: #ffffff;
+    background-image: url(src/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#armstrong{
+    width: 100px;
+}
+p{
+    background-color: hsla(60, 0%, 30%,50%);
+}

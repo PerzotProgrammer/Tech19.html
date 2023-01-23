@@ -1,0 +1,12 @@
+CZCIONKI
+<font size="" color="" face="">
+&nbsp; - spacja w tekscie (jeżeli więcej)
+<b> - pogrubienie
+<i> - kursywa
+<u> - podkreślie
+<s> - przekreślenie
+<sub> - indeks dolny
+<sup> - indeks górny
+<ol> - lista na numerki
+<ul> - lista na kropki
+<li> - element listy (zawsze dziedziczny do <ol>/<ul>)

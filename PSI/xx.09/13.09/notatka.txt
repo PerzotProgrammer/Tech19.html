@@ -1,0 +1,15 @@
+Komendy:
+title(head) = tytuł strony
+h1 = nagłówek
+a = link (<a herf="link">tekst</a>)
+hr = kreska
+marquee = ruchomy teks
+
+Atrybuty:
+color = kolor
+bgcolor = kolor tła (w body) lub style="background-color:'kolor';"
+size = wielkość
+behavior = zachowanie
+width = szerokość 
+height = wysokość
+direction = kierunek
