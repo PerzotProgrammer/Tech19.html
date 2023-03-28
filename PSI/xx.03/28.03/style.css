@@ -1,0 +1,33 @@
+.row{
+    justify-content: center;
+}
+
+.col-md-2{
+    height: 30vh;
+    border-radius: 25px;
+    text-align: center;
+}
+
+svg{
+    height: 20vh;
+    margin-top: 20px;
+}
+
+#banner{
+    font-size: 4rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#airplane{
+    background-color: blue;
+}
+#android{
+    background-color: green;
+}
+#balloon{
+    background-color: red;
+}
+#envelope{
+    background-color: yellow;
+}
