@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skrypty JSowe ciąg dalszy</title>
+    <script src="script.js"></script>
+</head>
+<body style="background-color: #454545;">
+    <div style="text-align: center; margin-top: 25vh;">
+        <h1 style="color: white; font-family: Verdana;">MATEMATYKA</h1>
+        <input type="number" id="1pole" value="2" style="width: 25px;">
+        <input list="znaki" id="znak" value="+" style="width: 25px;">
+        <datalist id="znaki">
+            <option value="+"></option>
+            <option value="-"></option>
+            <option value="*"></option>
+            <option value="/"></option>
+        </datalist>
+        <input type="number" id="2pole" value="2" style="width: 25px;">
+        <input type="button" value="Oblicz" onclick="Matematyka()">
+        <br>
+        <br>
+        <h1 style="color: white; font-family: Verdana;">SPRAWDŹ CZY TO JEST LICZBA</h1>
+        <input type="text" id="czyLiczba">
+        <input type="button" value="Sprawdź" onclick="CzyLiczba()">
+    </div>
+</body>
+</html>
