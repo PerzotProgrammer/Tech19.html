@@ -1,5 +1,9 @@
 # Tech19.html
-Szkolne repozytorium do programów. PSI oraz, od drugiej klasy, PAI.
+Szkolne repozytorium do stron internetowych w HTML-u, Arkuszy Styli CSSa, jak i skryptów języka JavaScript. <br>
+Repozytorium posiada programy z dwóch klas Technikum Informatycznego na kierunku Technik Programista, jak i również zadania testowe pod egzaminy zawodowe, maturalne i moje programy.
 
-### UWAGA!
-Może zawierać liczne ilości źle napisanego kodu CSS i JS.
+### Przedmioty wchodzące w skład Repo
+#### 1 klasa
+- PSI - Projektowanie Stron Internetowych
+#### 2 klasa
+- PAI - Programowanie Aplikacji Internetowych
