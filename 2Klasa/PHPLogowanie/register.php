@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,6 @@
     </form>
     <br>
     <?php
-    session_start();
     if (isset($_SESSION["regInfo"])) echo $_SESSION["regInfo"];
     ?>
     </div>

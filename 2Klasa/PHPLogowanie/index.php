@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,6 @@
         </form>
         <br>
         <?php
-            session_start();
             if (isset($_SESSION["logged"]) && $_SESSION["logged"]) header("Location: stronaglowna.php");
             if (isset($_SESSION["error"])) echo $_SESSION["error"];
         ?>
