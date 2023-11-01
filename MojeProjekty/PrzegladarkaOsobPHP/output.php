@@ -12,34 +12,37 @@
 <div>
     <h1>Wynik zapytania</h1>
     <div>
+        <label>
+            <input type="button" value="Powrót" onclick="location.href ='index.php'">
+        </label> <br><br>
         <?php
-        $imie = $_POST["imie"];
-        $nazwisko = $_POST["nazwisko"];
+            $imie = $_POST["imie"];
+            $nazwisko = $_POST["nazwisko"];
 
 
-        if ($nazwisko != "" && $imie != "") $query = "SELECT * FROM daneosob WHERE imie = '$imie' AND nazwisko = '$nazwisko'";
-        else if ($imie != "") $query = "SELECT * FROM daneosob WHERE imie = '$imie'";
-        else if ($nazwisko != "") $query = "SELECT * FROM daneosob WHERE nazwisko = '$nazwisko'";
-        else $query = "SELECT * FROM daneosob";
+            if ($nazwisko != "" && $imie != "") $query = "SELECT * FROM daneosob WHERE imie = '$imie' AND nazwisko = '$nazwisko'";
+            else if ($imie != "") $query = "SELECT * FROM daneosob WHERE imie = '$imie'";
+            else if ($nazwisko != "") $query = "SELECT * FROM daneosob WHERE nazwisko = '$nazwisko'";
+            else $query = "SELECT * FROM daneosob";
 
-        $host = "localhost";
-        $dbuser = "root";
-        $dbpass = "";
-        $dbname = "osoby";
+            $host = "localhost";
+            $dbuser = "root";
+            $dbpass = "";
+            $dbname = "osoby";
 
-        $conn = @new mysqli($host, $dbuser, $dbpass, $dbname);
-        if ($conn->connect_errno != 0) echo "Error:" . $conn->connect_errno;
-        else {
-            if ($output = $conn->query($query)) {
-                echo "<table>";
-                echo "<tr><td>ID</td><td>Imie</td><td>Nazwisko</td></tr>";
-                while ($row = $output->fetch_array()) {
-                    echo "<tr><td>" . $row["id"] . "</td><td>" . $row["imie"] . "</td><td>" . $row["nazwisko"] . "</td></tr>";
+            $conn = @new mysqli($host, $dbuser, $dbpass, $dbname);
+            if ($conn->connect_errno != 0) echo "Error:" . $conn->connect_errno;
+            else {
+                if ($output = $conn->query($query)) {
+                    echo "<table>";
+                    echo "<tr><td>ID</td><td>Imie</td><td>Nazwisko</td></tr>";
+                    while ($row = $output->fetch_array()) {
+                        echo "<tr><td>" . $row["id"] . "</td><td>" . $row["imie"] . "</td><td>" . $row["nazwisko"] . "</td></tr>";
+                    }
+                    echo "</table>";
                 }
-                echo "</table>";
+                $conn->close();
             }
-            $conn->close();
-        }
         ?>
     </div>
 </div>

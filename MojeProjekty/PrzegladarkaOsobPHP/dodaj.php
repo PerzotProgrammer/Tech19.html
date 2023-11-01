@@ -1,7 +1,4 @@
-<?php
-    session_start();
-    session_unset();
-?>
+<?php session_start()?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,32 +6,32 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Przeglądarka osób</title>
+    <title>Przeglądarka osób - dodawanie</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div>
-    <h1>Przeglądarka osób</h1>
+    <h1>Dodaj osoby</h1>
     <div>
-        <form action="output.php" method="post">
+        <form action="add.php" method="post">
             <label>
-                Wyszukaj po imieniu:
+                Imie:
                 <input type="text" name="imie">
             </label>
             <br>
             <label>
-                Wyszukaj po nazwisku:
+                Nazwisko:
                 <input type="text" name="nazwisko">
             </label>
             <br><br>
-            <input type="submit" value="Szukaj">
+            <input type="submit" value="Dodaj">
         </form>
         <label>
-            Chcesz dodać osoby?
-            <input type="button" value="Kliknij tutaj" onclick="location.href ='dodaj.php'">
+            <input type="button" value="Powrót" onclick="location.href ='index.php'">
         </label>
     </div>
-    
-</div>
+    <?php
+        if (isset($_SESSION["addInfo"])) echo $_SESSION["addInfo"];
+    ?>
 </body>
 </html>
