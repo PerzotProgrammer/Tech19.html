@@ -29,20 +29,27 @@
             $dbuser = "root";
             $dbpass = "";
             $dbname = "osoby";
-
-            $conn = @new mysqli($host, $dbuser, $dbpass, $dbname);
-            if ($conn->connect_errno != 0) echo "Error:" . $conn->connect_errno;
-            else {
-                if ($output = $conn->query($query)) {
-                    echo "<table>";
-                    echo "<tr><td>ID</td><td>Imie</td><td>Nazwisko</td></tr>";
-                    while ($row = $output->fetch_array()) {
-                        echo "<tr><td>" . $row["id"] . "</td><td>" . $row["imie"] . "</td><td>" . $row["nazwisko"] . "</td></tr>";
-                    }
-                    echo "</table>";
-                }
-                $conn->close();
+            
+            try {
+                $conn = @new mysqli($host, $dbuser, $dbpass, $dbname);
             }
+            catch (Exception $ex) {
+                echo "<span style='color:red'>Nie można odnaleźć połączenia z bazą!</span>";
+                exit();
+            }
+            if ($conn->connect_errno != 0) {
+                echo "Error: kod " . $conn->connect_errno;
+                exit();
+            }
+            if ($output = $conn->query($query)) {
+                echo "<table>";
+                echo "<tr><td>ID</td><td>Imie</td><td>Nazwisko</td></tr>";
+                while ($row = $output->fetch_array()) {
+                    echo "<tr><td>" . $row["id"] . "</td><td>" . $row["imie"] . "</td><td>" . $row["nazwisko"] . "</td></tr>";
+                }
+                echo "</table>";
+            }
+            $conn->close();
         ?>
     </div>
 </div>
