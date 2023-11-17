@@ -2,5 +2,5 @@
 Trening
 
 # ignore pod React.js
-package-lock.json
-MojeProjekty/*/README.md
+MojeProjekty/**/package-lock.json
+MojeProjekty/**/README.md
