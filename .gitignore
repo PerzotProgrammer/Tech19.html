@@ -1,2 +1,6 @@
 .idea
 Trening
+
+# ignore pod React.js
+package-lock.json
+MojeProjekty/*/README.md
