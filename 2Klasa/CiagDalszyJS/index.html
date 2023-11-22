@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ciąg dalszy JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="startTime()">
+<div id="main">
+    <div id="clock">
+        <p>Aktualna godzina:</p>
+        <p id="time"></p>
+    </div>
+    <div class="colors">
+        <form>
+            <label for="bgColorInput">Kolor tła:</label>
+            <input type="text" id="bgColorInput">
+            <br>
+            <label for="textColorInput">Kolor tekstu:</label>
+            <input type="text" id="textColorInput">
+            <br>
+            <input type="button" value="Zmień kolor tła" onclick="ChangeColors()">
+        </form>
+    </div>
+</div>
+</body>
+</html>

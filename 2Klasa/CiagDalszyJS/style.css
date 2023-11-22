@@ -1,0 +1,26 @@
+body {
+    font-size: xxx-large;
+    font-family: Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+#main {
+    background-color: #444444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#clock {
+    margin-top: 35vh;
+}
+
+.colors {
+    font-size: medium;
+    transform: scale(150%);
+}
