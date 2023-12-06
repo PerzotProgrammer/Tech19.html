@@ -3,7 +3,7 @@
 Trening
 
 # ignore pod frameworki
-./**/**/package-lock.json
-./**/**/README.md
-./**/**/.gitignore
-./**/**/.editorconfig
+./**/**/**/package-lock.json
+./**/**/**/README.md
+./**/**/**/.gitignore
+./**/**/**/.editorconfig
