@@ -1,9 +1,6 @@
 .idea
-.vscode
 Trening
 
-# ignore pod frameworki
-./**/**/**/package-lock.json
-./**/**/**/README.md
-./**/**/**/.gitignore
-./**/**/**/.editorconfig
+# ignore pod React.js
+MojeProjekty/**/package-lock.json
+MojeProjekty/**/README.md
