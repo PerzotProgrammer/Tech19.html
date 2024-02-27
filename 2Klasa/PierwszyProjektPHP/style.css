@@ -1,0 +1,20 @@
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td {
+    border: 1px solid #ededed;
+    padding: 4px;
+}
+
+body {
+    background-color: #454545;
+    color: #ededed;
+    font-family: Verdana, serif;
+}
+
+#titleRow {
+    font-weight: bolder;
+}
