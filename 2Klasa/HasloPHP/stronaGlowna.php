@@ -13,15 +13,25 @@
     $login = $_POST['login'];
     $password = $_POST['passwd'];
 
-    if (empty($login) || empty($password)) {
-        header("LOCATION: index.html");
+    if (empty($login) || empty($password)) header("LOCATION: index.html");
+
+    if ($login != 'admin' || $password != 'admin') {
+        echo "<p id='title' class='center'>Idź człowieku, nie znam cię!</p>";
+        exit();
     }
 
-    if ($login == 'admin' && $password == 'admin') {
-        echo "<p id='title'>Możesz wejść</p>";
-    } else {
-        echo "<p id='title'>Idź człowieku, nie znam cię!</p>";
+    echo "<p id='title' class='center'>Możesz wejść</p><br><p class='center'>Masz tu losowe liczby:</p>";
+    for ($i = 1; $i <= 10; $i++) echo "<p class='center rand'>" . rand(1, 100) . "</p><br>";
+    $factorial = 5;
+    echo "<p class='center'>Silnia z $factorial: " . Factorial($factorial) . "</p><br>";
+
+    function Factorial(int $factorial): int
+    {
+        $output = 1;
+        for ($temp = $factorial; $temp > 0; $temp--) $output *= $temp;
+        return $output;
     }
+
 ?>
 </body>
 </html>
