@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="primeNumbers.php" method="post">
+    <p class="title">Liczby pierwsze</p>
+    <label for="pNum">Podaj liczbę: </label><br>
+    <input type="number" min="2" max="500" name="pNum" id="pNum"><br>
+    <input type="submit" value="Wyślij">
+</form>
+<br>
+<form action="greatestCommonDivisor.php" method="post">
+    <p class="title">Największy wspólny dzielnik</p>
+    <label for="num1">Podaj pierwszą liczbę: </label><br>
+    <input type="number" min="2" max="500" name="num1" id="num1"><br>
+    <label for="num2">Podaj drugą liczbę: </label><br>
+    <input type="number" min="2" max="500" name="num2" id="num2"><br>
+    <input type="submit" value="Wyślij">
+</form>
+</body>
+</html>

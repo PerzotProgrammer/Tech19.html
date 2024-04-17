@@ -1,0 +1,36 @@
+body {
+    background-color: #454545;
+    color: #cccccc;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: solid 5px #cccccc;
+    border-radius: 10px;
+}
+
+input {
+    background-color: #cccccc;
+    color: #454545;
+    font-family: Verdana, sans-serif;
+    margin: 5px;
+    border: solid 2px #cccccc;
+    border-radius: 5px;
+}
+
+.num {
+    margin: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: large;
+}
