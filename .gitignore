@@ -1,11 +1,11 @@
-.idea
+# Pliki
+*.temp.*
+*.test.*
+
+
+# Foldery
 .vscode
+.idea
 Trening
-
-
-# ignore pod frameworki 
-package-lock.json
-README.md
-.gitignore
-.gitkeep
-.editorconfig
+Test
+Gitignore
