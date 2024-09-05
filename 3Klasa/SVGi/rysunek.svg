@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="rysunek.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.56126601"
+     inkscape:cx="238.74597"
+     inkscape:cy="542.5235"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="rect1"
+       width="62.333332"
+       height="57"
+       x="4.0588708"
+       y="3.0744312"
+       ry="7.1666665" />
+    <rect
+       style="fill:#008000;stroke-width:0.264583"
+       id="rect1-3"
+       width="62.333332"
+       height="57"
+       x="67.544289"
+       y="3.1452663"
+       ry="7.1666665" />
+    <rect
+       style="fill:#0000ff;stroke-width:0.264583"
+       id="rect1-3-4"
+       width="62.333332"
+       height="57"
+       x="4.4422097"
+       y="61.605686"
+       ry="7.1666665" />
+    <rect
+       style="fill:#ffff00;stroke-width:0.264583"
+       id="rect1-3-5"
+       width="62.333332"
+       height="57"
+       x="67.808884"
+       y="61.018177"
+       ry="7.1666665" />
+  </g>
+</svg>
