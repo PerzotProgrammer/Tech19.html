@@ -1,0 +1,31 @@
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #454545;
+    color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#canvas {
+    margin: 50px;
+    background-color: #aaaaaa;
+    border: 3px solid #252525;
+}
+
+#formsPanel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form {
+    background-color: #888888;
+    width: 400px;
+    height: 250px;
+    border: 3px solid #252525;
+}

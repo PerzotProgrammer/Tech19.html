@@ -6,11 +6,34 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 <div id="main" style="background-color: #454545;">
-    <img src="rysunek.svg" alt="rysunek">
-    <img src="stop.svg" alt="rysunek">
+    <svg id="canvas" width="50vw" height="50vh">
+    </svg>
+    <div id="formsPanel">
+        <form id="formRect" class="form">
+            <h2>Rectangle</h2>
+            <label for="wRect">width:</label><input type="number" name="wRect" id="wRect"><br>
+            <label for="hRect">height:</label><input type="number" name="hRect" id="hRect"><br>
+            <label for="xRect">x position:</label><input type="number" name="xRect" id="xRect"><br>
+            <label for="yRect">y position:</label><input type="number" name="yRect" id="yRect"><br>
+            <label for="fRect">fill:</label><input type="color" name="fRect" id="fRect"><br>
+            <label for="randRect">randomize transform:</label><input type="checkbox" name="randRect" id="randRect"><br>
+            <input type="button" value="add" onclick="MakeRect()">
+        </form>
+        <form id="formCirc" class="form">
+            <h2>Circle</h2>
+            <label for="rCirc">radius:</label><input type="number" name="rCirc" id="rCirc"><br>
+            <label for="xCirc">x position:</label><input type="number" name="xCirc" id="xCirc"><br>
+            <label for="yCirc">y position:</label><input type="number" name="yCirc" id="yCirc"><br>
+            <label for="fCirc">fill:</label><input type="color" name="fCirc" id="fCirc"><br>
+            <label for="randCirc">randomize transform:</label><input type="checkbox" name="randCirc" id="randCirc"><br>
+            <input type="button" value="add" onclick="MakeCirc()">
+        </form>
+    </div>
 </div>
 </body>
 </html>
