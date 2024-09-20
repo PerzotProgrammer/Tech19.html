@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>SVG image manipulator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
@@ -21,7 +21,8 @@
             <label for="xRect">x position:</label><input type="number" name="xRect" id="xRect"><br>
             <label for="yRect">y position:</label><input type="number" name="yRect" id="yRect"><br>
             <label for="fRect">fill:</label><input type="color" name="fRect" id="fRect"><br>
-            <label for="randRect">randomize transform:</label><input type="checkbox" name="randRect" id="randRect"><br>
+            <label for="rotRect">rotation:</label><input type="number" name="rotRect" id="rotRect" min="0" max="359">
+            <br>
             <input type="button" value="add" onclick="MakeRect()">
         </form>
         <form id="formCirc" class="form">
@@ -30,8 +31,15 @@
             <label for="xCirc">x position:</label><input type="number" name="xCirc" id="xCirc"><br>
             <label for="yCirc">y position:</label><input type="number" name="yCirc" id="yCirc"><br>
             <label for="fCirc">fill:</label><input type="color" name="fCirc" id="fCirc"><br>
-            <label for="randCirc">randomize transform:</label><input type="checkbox" name="randCirc" id="randCirc"><br>
+            <br>
             <input type="button" value="add" onclick="MakeCirc()">
+        </form>
+        <form id="formPoly" class="form">
+            <h2>Polygon</h2>
+            <label for="pPoly">points:</label><input type="text" name="pPoly" id="pPoly"><br>
+            <label for="fPoly">fill:</label><input type="color" name="fCirc" id="fPoly"><br>
+            <br>
+            <input type="button" value="add" onclick="MakePoly()">
         </form>
     </div>
 </div>

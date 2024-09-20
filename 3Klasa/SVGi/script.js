@@ -5,11 +5,9 @@ function MakeRect() {
     let xRect = document.getElementById("xRect").value;
     let yRect = document.getElementById("yRect").value;
     let fRect = document.getElementById("fRect").value;
-    let randRect = document.getElementById("randRect").value;
-    let rand = "";
-    if (randRect) rand = RandomTransform();
+    let rotRect = document.getElementById("rotRect").value;
 
-    let shape = `<rect width="${wRect}" height="${hRect}" x="${xRect}" y="${yRect}" fill="${fRect}" ${rand}>`;
+    let shape = `<rect class="object" width="${wRect}" height="${hRect}" x="${xRect}" y="${yRect}" fill="${fRect}" transform="rotate(${rotRect}, ${parseInt(xRect) + (parseInt(wRect) / 2)}, ${parseInt(yRect) + (parseInt(hRect) / 2)})  ">`;
     canvas.innerHTML += shape;
 }
 
@@ -19,18 +17,16 @@ function MakeCirc() {
     let xCirc = document.getElementById("xCirc").value;
     let yCirc = document.getElementById("yCirc").value;
     let fCirc = document.getElementById("fCirc").value;
-    let randCirc = document.getElementById("randCirc").value;
-    let rand = "";
-    if (randCirc) rand = RandomTransform();
 
-    let shape = `<circle r="${rCirc}" cx="${xCirc}" cy="${yCirc}" fill="${fCirc}" ${rand}>`;
+    let shape = `<circle class="object" r="${rCirc}" cx="${xCirc}" cy="${yCirc}" fill="${fCirc}">`;
     canvas.innerHTML += shape;
 }
 
-function RandomTransform() {
-    return `transform="rotate(${RandomNumber(0, 359)}), skewX(${RandomNumber(0, 359)}), skewY(${RandomNumber(0, 359)})"`;
-}
+function MakePoly() {
+    let canvas = document.getElementById("canvas");
+    let pPoly = document.getElementById("pPoly").value;
+    let fPoly = document.getElementById("fPoly").value;
 
-function RandomNumber(min, max) {
-    return Math.floor(Math.random() * max) + min;
+    let shape = `<polygon class="object" points="${pPoly}" fill="${fPoly}">`;
+    canvas.innerHTML += shape;
 }
